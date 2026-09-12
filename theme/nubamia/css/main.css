@@ -117,13 +117,24 @@ h3 { font-size: 1.3rem; }
 
 .main-nav li:hover > ul { display: flex; }
 
+.nav-toggle-checkbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .menu-toggle {
   display: none;
-  background: none;
-  border: none;
   font-size: 1.8rem;
+  line-height: 1;
   cursor: pointer;
   color: var(--ink);
+  user-select: none;
+}
+
+.nav-toggle-checkbox:focus-visible + .menu-toggle {
+  outline: 2px solid var(--star-dark);
+  outline-offset: 2px;
 }
 
 /* ---------- Hero ---------- */
@@ -439,10 +450,9 @@ h3 { font-size: 1.3rem; }
     width: 100%;
     order: 3;
   }
-  .main-nav.is-open { display: block; }
+  .nav-toggle-checkbox:checked ~ .main-nav { display: block; }
   .main-nav ul { flex-direction: column; }
-  .main-nav ul ul { position: static; box-shadow: none; display: none; }
-  .main-nav li.menu-open > ul { display: flex; }
+  .main-nav ul ul { position: static; box-shadow: none; display: flex; }
   .site-header .wrap { flex-wrap: wrap; }
   .hero { padding: 50px 0 40px; }
   h1 { font-size: 1.9rem; }

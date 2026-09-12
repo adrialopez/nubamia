@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'NUBAMIA_VERSION', '1.0.1' );
+define( 'NUBAMIA_VERSION', '1.0.2' );
 
 function nubamia_setup() {
 	add_theme_support( 'title-tag' );
@@ -32,7 +32,6 @@ function nubamia_scripts() {
 	wp_enqueue_style( 'nubamia-google-fonts', 'https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Caveat:wght@400;600;700&display=swap', array(), null );
 	wp_enqueue_style( 'nubamia-style', get_template_directory_uri() . '/style.css', array(), NUBAMIA_VERSION );
 	wp_enqueue_style( 'nubamia-main', get_template_directory_uri() . '/css/main.css', array( 'nubamia-style' ), NUBAMIA_VERSION );
-	wp_enqueue_script( 'nubamia-nav', get_template_directory_uri() . '/js/nav.js', array(), NUBAMIA_VERSION, true );
 }
 add_action( 'wp_enqueue_scripts', 'nubamia_scripts' );
 

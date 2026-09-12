@@ -1,5 +1,6 @@
 # BEGIN Nubamia redirects
 Redirect 301 /privacy-policy/ /politica-privacidad/
+Redirect 301 /terms-of-use/ /terminos-de-uso/
 # END Nubamia redirects
 
 # BEGIN WordPress

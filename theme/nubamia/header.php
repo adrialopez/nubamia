@@ -19,7 +19,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<a class="site-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">
 			<img src="<?php echo esc_url( get_template_directory_uri() . '/images/logo.png' ); ?>" alt="<?php bloginfo( 'name' ); ?>">
 		</a>
-		<button class="menu-toggle" aria-label="<?php esc_attr_e( 'Abrir menú', 'nubamia' ); ?>" aria-expanded="false">&#9776;</button>
+		<input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+		<label for="nav-toggle" class="menu-toggle" aria-label="<?php esc_attr_e( 'Abrir menú', 'nubamia' ); ?>">&#9776;</label>
 		<nav class="main-nav" aria-label="<?php esc_attr_e( 'Menú principal', 'nubamia' ); ?>">
 			<?php
 			wp_nav_menu(
