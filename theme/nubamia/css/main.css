@@ -146,8 +146,9 @@ h3 { font-size: 1.3rem; }
 
 .hero .site-logo-big img { max-width: 320px; margin: 0 auto 18px; }
 
-.hero p.tagline {
+.hero h1.tagline {
   font-family: var(--font-script);
+  font-weight: 400;
   font-size: 2rem;
   color: var(--star-dark);
   margin: 0 auto 30px;
@@ -417,6 +418,11 @@ h3 { font-size: 1.3rem; }
   border-top: 1px solid var(--sky-light);
   color: var(--ink-soft);
   font-size: 0.9rem;
+}
+
+.footer-bottom a {
+  color: var(--ink-soft);
+  text-decoration: underline;
 }
 
 /* ---------- Responsive ---------- */

@@ -37,7 +37,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 			</div>
 		</div>
 		<div class="footer-bottom">
-			<p>&copy; <?php echo esc_html( date( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>. <?php esc_html_e( 'Todos los derechos reservados.', 'nubamia' ); ?></p>
+			<p>&copy; <?php echo esc_html( date( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>. <?php esc_html_e( 'Todos los derechos reservados.', 'nubamia' ); ?>
+				· <a href="<?php echo esc_url( home_url( '/politica-privacidad/' ) ); ?>"><?php esc_html_e( 'Privacidad', 'nubamia' ); ?></a>
+				· <a href="<?php echo esc_url( home_url( '/politica-cookies/' ) ); ?>"><?php esc_html_e( 'Cookies', 'nubamia' ); ?></a>
+				· <a href="javascript:void(0);" class="cky-banner-element"><?php esc_html_e( 'Configurar cookies', 'nubamia' ); ?></a>
+			</p>
 		</div>
 	</div>
 </footer>

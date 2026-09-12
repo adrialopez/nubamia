@@ -13,7 +13,7 @@ get_header();
 		<div class="site-logo-big">
 			<img src="<?php echo esc_url( get_template_directory_uri() . '/images/logo.png' ); ?>" alt="<?php bloginfo( 'name' ); ?>">
 		</div>
-		<p class="tagline"><?php bloginfo( 'description' ); ?></p>
+		<h1 class="tagline"><?php bloginfo( 'description' ); ?></h1>
 		<p>En Nubamía diseñamos detalles únicos y 100% personalizados para dar la bienvenida a tu bebé: Baby Showers, decoración del hospital y muchas otras ocasiones especiales.</p>
 		<a class="btn" href="<?php echo esc_url( home_url( '/contacto/' ) ); ?>">Cuéntanos tu idea</a>
 	</div>
