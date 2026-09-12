@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'NUBAMIA_VERSION', '1.0.0' );
+define( 'NUBAMIA_VERSION', '1.0.1' );
 
 function nubamia_setup() {
 	add_theme_support( 'title-tag' );
@@ -52,3 +52,5 @@ add_filter( 'excerpt_more', 'nubamia_excerpt_more' );
 function nubamia_fallback_menu() {
 	echo '<ul class="menu"><li><a href="' . esc_url( home_url( '/' ) ) . '">' . esc_html__( 'Inicio', 'nubamia' ) . '</a></li></ul>';
 }
+
+require get_template_directory() . '/inc/contact-form.php';

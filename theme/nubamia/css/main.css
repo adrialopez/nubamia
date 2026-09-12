@@ -320,6 +320,30 @@ h3 { font-size: 1.3rem; }
   font-size: 1rem;
 }
 
+.contact-wrap label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.contact-form-message {
+  max-width: 560px;
+  margin: 0 auto 20px;
+  padding: 18px 22px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.contact-form-success {
+  background: #e6f7ec;
+  color: #216b3f;
+}
+
+.contact-form-error {
+  background: #fdecec;
+  color: #9c2b2b;
+}
+
 /* ---------- Blog ---------- */
 .blog-grid {
   display: grid;
