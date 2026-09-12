@@ -35,6 +35,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<li><a href="<?php echo esc_url( home_url( '/contacto/' ) ); ?>"><?php esc_html_e( 'Escríbenos', 'nubamia' ); ?></a></li>
 				</ul>
 			</div>
+			<div>
+				<h4><?php esc_html_e( 'Cuando crezcan', 'nubamia' ); ?></h4>
+				<ul>
+					<li>
+						<a href="https://mariana-martinez.es/" target="_blank" rel="noopener">
+							<?php esc_html_e( 'Educación para la familia', 'nubamia' ); ?>
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 		<div class="footer-bottom">
 			<p>&copy; <?php echo esc_html( date( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>. <?php esc_html_e( 'Todos los derechos reservados.', 'nubamia' ); ?>

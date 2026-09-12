@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'NUBAMIA_VERSION', '1.0.5' );
+define( 'NUBAMIA_VERSION', '1.0.6' );
 
 function nubamia_setup() {
 	add_theme_support( 'title-tag' );
@@ -55,3 +55,4 @@ function nubamia_fallback_menu() {
 require get_template_directory() . '/inc/contact-form.php';
 require get_template_directory() . '/inc/lightbox.php';
 require get_template_directory() . '/inc/performance.php';
+require get_template_directory() . '/inc/related-posts.php';

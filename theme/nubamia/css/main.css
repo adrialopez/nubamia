@@ -461,6 +461,24 @@ body.nubamia-lightbox-locked {
   gap: 20px;
 }
 
+.author-box {
+  margin-top: 40px;
+  padding: 20px 24px;
+  background: var(--sky-light);
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+}
+
+.author-box p { margin: 0; }
+
+.related-posts {
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px solid var(--sky-light);
+}
+
+.related-posts h2 { margin-top: 0; }
+
 /* ---------- Comments ---------- */
 .comments-area {
   margin-top: 50px;
@@ -602,7 +620,7 @@ body.nubamia-lightbox-locked {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.3fr 1fr 1fr;
+  grid-template-columns: 1.3fr 1fr 1fr 1fr;
   gap: 30px;
 }
 
